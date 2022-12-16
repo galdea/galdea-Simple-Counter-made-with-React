@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 
-const TimerFunctionMin = () => {
+const TimerFunctionHundred = () => {
       const [counter, setCounter] = useState(0);
   
       useEffect(() => {
@@ -12,7 +12,7 @@ const TimerFunctionMin = () => {
                   }
                   return prevCounter + 1;
               });
-          }, 10000);
+          }, 100000);
   
           return () => clearInterval(interval);
       }, []);
@@ -24,6 +24,6 @@ const TimerFunctionMin = () => {
       );
   }
 
-export default TimerFunctionMin;
+export default TimerFunctionHundred;
 
 
